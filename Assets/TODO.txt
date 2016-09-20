@@ -1,0 +1,11 @@
+replace the CameraManager script etc with some better encapsulated things that can stand alone.
+eg: cameraMover accepts a Window instead of a string, so the cameraMover is not tied to the implementation of the WindowManager
+
+BUT, that way I can't link easily using a clickevent, as that only accepts a string and not a window? but it does if you drag a component
+we'll see.
+
+
+
+ScreenTransitionManager -> ScreenTransitionData
+WindowManager -> Window
+CameraMover
